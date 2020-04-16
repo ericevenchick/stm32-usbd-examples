@@ -45,3 +45,10 @@
     cd example-stm32l432kc
     openocd -f openocd.cfg &
     cargo run --release
+
+### STM32F411E ([32F411EDISCOVERY](https://www.st.com/en/evaluation-tools/32f411ediscovery.html) board)
+
+    rustup target add thumbv7em-none-eabihf
+    cd example-stm32f411e
+    openocd -f openocd.cfg &
+    cargo run --release

@@ -1,0 +1,13 @@
+[package]
+name = "example-stm32f411"
+version = "0.1.0"
+authors = ["Vadim Kaushan <admin@disasm.info>"]
+edition = "2018"
+
+[dependencies]
+cortex-m = "0.6"
+cortex-m-rt = "0.6"
+stm32f4xx-hal = { git = "https://github.com/ericevenchick/stm32f4xx-hal", features = ["stm32f411", "rt", "usb_fs"] }
+panic-semihosting = "0.5"
+usb-device = "0.2.4"
+usbd-serial = "0.1"
